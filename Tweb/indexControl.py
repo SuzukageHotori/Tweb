@@ -6,7 +6,7 @@
 __author__ = 'Taburiss'
 
 from flask import Flask,request,render_template;
-
+import encodings
 app = Flask(__name__)
 
 
