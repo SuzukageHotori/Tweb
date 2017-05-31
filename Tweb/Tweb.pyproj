@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c29336cc-f80d-4239-bb32-0f5322f5c45d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DbConn.py</StartupFile>
+    <StartupFile>indexControl.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
