@@ -25,6 +25,9 @@
     <Compile Include="config.py" />
     <Compile Include="DbConn.py" />
     <Compile Include="indexControl.py" />
+    <Compile Include="model.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
@@ -37,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="static\css\base.css" />
+    <Content Include="static\css\index.css" />
     <Content Include="static\font\8bitoperator.eot" />
     <Content Include="static\font\8bitoperator.svg" />
     <Content Include="static\font\8bitoperator.ttf" />

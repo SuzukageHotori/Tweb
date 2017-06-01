@@ -1,0 +1,28 @@
+.content{
+	width: 1000px;
+	height: auto;
+	margin: 20px auto;
+}
+.content .title{
+	width: 1000px;
+	height: 60px;
+	margin: -2px 0 0 -2px;
+}
+.content .title .button{
+	width: 120px;
+	height: 56px;
+	float: left;
+	line-height: 58px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.content .title .button.active{
+	background: #0000FF;
+	
+}
+.content .cl{
+	width: 700px;
+	height: auto;
+	margin: -2px 0 0 -2px;
+}

@@ -14,8 +14,10 @@ user = c['db']['user'];
 password = c['db']['password'];
 database = c['db']['database'];
 
-conn = mysql.connector.connect(host=host,user=user, password=password, database=database);
-cursor = conn.cursor();
-cursor.execute('select * from TestSheet');
-values = cursor.fetchall();
-print(values);
+def connectTest():
+    conn = mysql.connector.connect(host=host,user=user, password=password, database=database);
+    cursor = conn.cursor();
+    cursor.execute('select * from TestSheet');
+    values = cursor.fetchall();
+    cursor.close();
+    conn.close();

@@ -13,3 +13,28 @@
 	padding: 0;
 	font-family:"8bit","microsoft yahei";
 }
+
+.bgBlack{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.bgBlue{
+	background-color: #0000FF;
+}
+.bdWhite{
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+}
+.bdGreen{
+	border: 2px solid #00ff00;
+	box-sizing: border-box;
+}
+.bdRed{
+	border: 2px solid #FF0000;
+	box-sizing: border-box;
+}
+.bdBlue{
+	border: 2px solid #0000FF;
+	box-sizing: border-box;
+}
