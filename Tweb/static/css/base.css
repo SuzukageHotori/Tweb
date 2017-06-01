@@ -1,11 +1,15 @@
 @font-face {
-font-family: '8bit';
-url('../font/8bitoperator.woff') format('woff'),
-url('../font/8bitoperator.ttf') format('truetype')
-} 
+    font-family: '8bit';
+    src: url('../font/8bitoperator.eot');
+    src: url('../font/8bitoperator.eot') format('embedded-opentype'),
+         url('../font/8bitoperator.woff2') format('woff2'),
+         url('../font/8bitoperator.woff') format('woff'),
+         url('../font/8bitoperator.ttf') format('truetype'),
+         url('../font/8bitoperator.svg#8bitoperato') format('svg');
+}
 
 *{
 	margin: 0;
 	padding: 0;
-	font-family:'8bit',"microsoft yahei";
+	font-family:"8bit","microsoft yahei";
 }

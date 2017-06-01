@@ -37,9 +37,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="static\css\base.css" />
-    <Content Include="static\font\8bitoperato.ttf" />
-    <Content Include="static\font\8bitoperato.woff" />
+    <Content Include="static\font\8bitoperator.eot" />
+    <Content Include="static\font\8bitoperator.svg" />
+    <Content Include="static\font\8bitoperator.ttf" />
+    <Content Include="static\font\8bitoperator.woff" />
+    <Content Include="static\font\8bitoperator.woff2" />
     <Content Include="static\img\timg.jpg" />
+    <Content Include="static\js\js.js" />
     <Content Include="templates\home\Index.html" />
   </ItemGroup>
   <PropertyGroup>
