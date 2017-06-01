@@ -21,7 +21,7 @@ class homeModel(object):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     model = homeModel();
-    #a = url_for("static",filename="img/timg.jpg") ;
+    a = url_for("static",filename="img/timg.jpg") ;
     return  render_template('/home/Index.html',model=model);
 
 

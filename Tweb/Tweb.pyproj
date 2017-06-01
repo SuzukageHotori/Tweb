@@ -29,11 +29,16 @@
   <ItemGroup>
     <Folder Include="static\" />
     <Folder Include="static\css\" />
+    <Folder Include="static\font\" />
     <Folder Include="static\img\" />
+    <Folder Include="static\js\" />
     <Folder Include="templates\" />
     <Folder Include="templates\home\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="static\css\base.css" />
+    <Content Include="static\font\8bitoperato.ttf" />
+    <Content Include="static\font\8bitoperato.woff" />
     <Content Include="static\img\timg.jpg" />
     <Content Include="templates\home\Index.html" />
   </ItemGroup>
