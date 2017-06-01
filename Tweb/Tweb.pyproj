@@ -29,10 +29,12 @@
   <ItemGroup>
     <Folder Include="static\" />
     <Folder Include="static\css\" />
+    <Folder Include="static\img\" />
     <Folder Include="templates\" />
     <Folder Include="templates\home\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="static\img\timg.jpg" />
     <Content Include="templates\home\Index.html" />
   </ItemGroup>
   <PropertyGroup>
