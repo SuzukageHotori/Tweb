@@ -5,7 +5,14 @@
     <meta charset="utf-8"/>
     <title>{{model.title}}</title>
     <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
-     <link rel="stylesheet" type="text/css" href="../../static/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/index.css"/>
+    <script language="javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script language="javascript" src="../../static/js/js.js"></script>
+    <script>
+        $(document).ready(function() {
+            timerWidger.init($(".content .cb .timer"));
+        })
+    </script>
 </head>
 <body class="bgBlack">
 	<div class="content bdWhite" >
@@ -20,10 +27,13 @@
 				Tool
 			</div>
 		</div>
-		<div class="cl bdWhite"style="height: 700px;">
-			<h1>will be soon !</h1>
-			<img src="../../static/img/timg.jpg" />
-		</div>
+	    <div class="cl bdWhite"style="height: 700px;">
+	        <h1>will be soon !</h1>
+	        <img src="../../static/img/timg.jpg" />
+	    </div>
+	    <div class="cb bdWhite">
+	        <div class="timer"></div>
+	    </div>
 	</div>
 </body>
 </html>

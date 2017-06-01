@@ -1,28 +1,44 @@
-.content{
-	width: 1000px;
-	height: auto;
-	margin: 20px auto;
+.content {
+    height: auto;
+    margin: 20px auto;
+    width: 1000px;
 }
-.content .title{
-	width: 1000px;
-	height: 60px;
-	margin: -2px 0 0 -2px;
+
+.content .title {
+    height: 60px;
+    margin: -2px 0 0 -2px;
+    width: 1000px;
 }
-.content .title .button{
-	width: 120px;
-	height: 56px;
-	float: left;
-	line-height: 58px;
-	font-size: 20px;
-	text-align: center;
-	cursor: pointer;
+
+.content .title .button {
+    cursor: pointer;
+    float: left;
+    font-size: 20px;
+    height: 56px;
+    line-height: 58px;
+    text-align: center;
+    width: 120px;
 }
-.content .title .button.active{
-	background: #0000FF;
-	
+
+.content .title .button.active { background: #0000FF; }
+
+.content .cl {
+    height: auto;
+    margin: -2px 0 0 -2px;
+    width: 700px;
 }
-.content .cl{
-	width: 700px;
-	height: auto;
-	margin: -2px 0 0 -2px;
+
+.content .cb {
+    height: 120px;
+    margin: -2px 0 0 -2px;
+    width: 1000px;
+}
+
+.content .cb .timer {
+    font-size: 12px;
+    height: 56px;
+    margin-left: 50px;
+    width: 400px;
+    line-height: 56px;
+    text-align: left;
 }
