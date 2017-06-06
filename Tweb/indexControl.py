@@ -22,5 +22,13 @@ def home():
     return  render_template('/home/Index.html',model=model);
 
 
+@app.route('/postTest', methods=['POST'])
+def postTest():
+    return jsonify({'a':1,'b':['hello','world']});
+
+
+
+
+
 if __name__ == '__main__':
     app.run(port=8023);
