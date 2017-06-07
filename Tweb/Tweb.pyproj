@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c29336cc-f80d-4239-bb32-0f5322f5c45d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>indexControl.py</StartupFile>
+    <StartupFile>toolControl.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,9 @@
     <Compile Include="DbConn.py" />
     <Compile Include="indexControl.py" />
     <Compile Include="model.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="toolControl.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
