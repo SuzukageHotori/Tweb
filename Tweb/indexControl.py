@@ -12,7 +12,7 @@ from DbConn import *
 
 #DEBUG = True
 app = Flask(__name__,static_url_path='/static', static_folder='static')
-app.debug = True;
+#app.debug = True;
 
 
 @app.route('/', methods=['GET', 'POST'])
