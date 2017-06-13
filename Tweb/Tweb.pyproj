@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c29336cc-f80d-4239-bb32-0f5322f5c45d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>toolControl.py</StartupFile>
+    <StartupFile>indexControl.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,9 +28,6 @@
     <Compile Include="model.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="toolControl.py">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
@@ -40,6 +37,8 @@
     <Folder Include="static\js\" />
     <Folder Include="templates\" />
     <Folder Include="templates\home\" />
+    <Folder Include="templates\layout\" />
+    <Folder Include="templates\tool\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="static\css\base.css" />
@@ -52,6 +51,8 @@
     <Content Include="static\img\timg.jpg" />
     <Content Include="static\js\js.js" />
     <Content Include="templates\home\Index.html" />
+    <Content Include="templates\layout\layout.html" />
+    <Content Include="templates\tool\index.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

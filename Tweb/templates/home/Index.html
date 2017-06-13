@@ -1,41 +1,13 @@
-﻿<!DOCTYPE html>
+﻿{% extends "/layout/layout.html" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8"/>
-    <title>{{model.title}}</title>
-    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
-    <link rel="stylesheet" type="text/css" href="../../static/css/index.css"/>
-    <script language="javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script language="javascript" src="../../static/js/js.js"></script>
-    <script>
-        $(document).ready(function() {
-            timerWidger.init($(".content .cb .timer"));
-            test.postTest();
-        })
-    </script>
-</head>
-<body class="bgBlack">
-	<div class="content bdWhite" >
-		<div class="title bdWhite">
-			<div class="button active">
-				Home
-			</div>
-			<div class="button">
-				Essay
-			</div>
-			<div class="button">
-				Tool
-			</div>
-		</div>
-	    <div class="cl bdWhite"style="height: 700px;">
-	        <h1>will be soon !</h1>
-	        <img src="../../static/img/timg.jpg" />
-	    </div>
-	    <div class="cb bdWhite">
-	        <div class="timer"></div>
-	        <div class="copyRight">Copyright © 2015-2017, Taburiss.Com, All Rights Reserved</div>
-	    </div>
-	</div>
-</body>
-</html>
+{%block title%}
+{{model.title}}
+{%endblock%}
+
+
+{%block content%}
+<div class="cl bdWhite" style="height: 700px;">
+    <h1>will be soon !</h1>
+    <img src="../../static/img/timg.jpg" />
+</div>
+{%endblock%}

@@ -12,7 +12,7 @@ from DbConn import *
 
 #DEBUG = True
 app = Flask(__name__,static_url_path='/static', static_folder='static')
-
+app.debug = True;
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -26,6 +26,10 @@ def home():
 def postTest():
     return jsonify({'a':1,'b':['hello','world']});
 
+
+@app.route('/tool', methods=['GET', 'POST'])
+def toolHome():
+    return   render_template('/tool/index.html');
 
 
 

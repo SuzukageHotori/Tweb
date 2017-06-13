@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
+    {%block style%}
+    {%endblock%}
+    <link rel="stylesheet" type="text/css" href="../../static/css/index.css" />
+    <script language="javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script language="javascript" src="../../static/js/js.js"></script>
+    {%block script%}
+    {%endblock%}
+    <script>
+        $(document).ready(function() {
+            timerWidger.init($(".content .cb .timer"));
+            test.postTest();
+        })
+    </script>
+</head>
+<body class="bgBlack">
+    <div class="content bdWhite">
+        <div class="title bdWhite">
+            <div class="button active">
+                Home
+            </div>
+            <div class="button">
+                Essay
+            </div>
+            <div class="button">
+                Tool
+            </div>
+        </div>
+        {%block content%}
+        {%endblock%}
+        <div class="cb bdWhite">
+            <div class="timer"></div>
+            <div class="copyRight">Copyright © 2015-2017, Taburiss.Com, All Rights Reserved</div>
+        </div>
+    </div>
+</body>
+</html>
