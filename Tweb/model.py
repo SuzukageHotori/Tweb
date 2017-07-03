@@ -9,7 +9,12 @@ class baseModel(object):
     title = 'Taburiss Studio';
 
 class homeModel(baseModel):
-    __slots__=('name','dict');
+    __slots__=('name');
+    def __init__(self):
+        self.name = 'Taburiss';
+
+class toolModel(baseModel):
+    __slots__=('name');
     def __init__(self):
         self.name = 'Taburiss';
 

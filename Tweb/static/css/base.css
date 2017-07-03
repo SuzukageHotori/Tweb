@@ -14,6 +14,10 @@
 	font-family:"8bit","microsoft yahei";
 }
 
+a{
+    text-decoration: none;
+}
+
 .bgBlack{
 	background-color: #000000;
 	color: #FFFFFF;
@@ -37,4 +41,61 @@
 .bdBlue{
 	border: 2px solid #0000FF;
 	box-sizing: border-box;
+}
+.content {
+    height: auto;
+    margin: 20px auto;
+    width: 1000px;
+}
+
+.content .title {
+    height: 60px;
+    margin: -2px 0 0 -2px;
+    width: 1000px;
+}
+
+.content .title .button {
+    cursor: pointer;
+    float: left;
+    font-size: 20px;
+    height: 56px;
+    line-height: 58px;
+    text-align: center;
+    width: 120px;
+    color: #ffffff
+}
+
+.content .title .button.active { background: #0000FF; }
+
+.content .cl {
+    height: auto;
+    margin: -2px 0 0 -2px;
+    width: 700px;
+}
+
+.content .cb {
+    height: 120px;
+    margin: -2px 0 0 -2px;
+    width: 1000px;
+}
+
+.content .cb .timer {
+    font-size: 12px;
+    height: 56px;
+    margin-left: 50px;
+    width: 400px;
+    line-height: 56px;
+    text-align: left;
+}
+.content .cb .copyRight {
+    font-size: 12px;
+    height: 56px;
+    margin-left: 50px;
+    width: 800px;
+    line-height: 56px;
+    text-align: left;
+}
+
+.fWhite {
+    color: white;
 }

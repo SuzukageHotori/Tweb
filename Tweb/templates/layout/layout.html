@@ -14,22 +14,26 @@
     <script>
         $(document).ready(function() {
             timerWidger.init($(".content .cb .timer"));
-            test.postTest();
+            //test.postTest();
         })
     </script>
 </head>
 <body class="bgBlack">
     <div class="content bdWhite">
         <div class="title bdWhite">
-            <div class="button" id="homeButton">
-                Home
-            </div>
-            <div class="button"  id="essayButton">
+            <a href="/">
+                <div class="button" id="homeButton">
+                    Home
+                </div>
+            </a>
+            <div class="button" id="essayButton">
                 Essay
             </div>
-            <div class="button"  id="toolButton">
-                Tool
-            </div>
+            <a href="/tool">
+                <div class="button" id="toolButton">
+                    Tool
+                </div>
+            </a>
         </div>
         {%block content%}
         {%endblock%}
