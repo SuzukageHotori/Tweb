@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c29336cc-f80d-4239-bb32-0f5322f5c45d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>testlab.py</StartupFile>
+    <StartupFile>indexControl.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -44,6 +44,7 @@
     <Folder Include="templates\tool\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="static\css\b64.css" />
     <Content Include="static\css\base.css" />
     <Content Include="static\css\index.css" />
     <Content Include="static\css\tool.css" />

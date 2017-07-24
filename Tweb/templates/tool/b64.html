@@ -7,19 +7,61 @@
 
 {%block content%}
 <div class="cl bdWhite" style="height: 700px;">
-    <input/>
-
-
+    <textarea class="textarea" id="plainText" placeholder="Plain Text"></textarea>
+    <button class="button"  id="decode">↑</button>
+    <button class="button"  id="encode">↓</button>
+    <textarea class="textarea" id="cipherText" placeholder="Cipher Text"></textarea>
 </div>
 {%endblock%}
 
 {%block script%}
 <script>
     $(document).ready(function() {
-        $("#toolButton").addClass("active");
+        b64.init();
     });
+    var b64 = function () {
+        var encode = function() {
+            $.ajax({
+                type: "POST",
+                url: "/tool/b64Encode",
+                data: {plain: $("#plainText").val()},
+                dataType: "json",
+                success: function(data) {
+                    $("#cipherText").val(data['cipher']);
+
+                }
+
+            });
+        };
+        var decode = function () {
+            $.ajax({
+                type: "POST",
+                url: "/tool/b64Decode",
+                data: { cipher: $("#cipherText").val() },
+                dataType: "json",
+                success: function (data) {
+                    $("#plainText").val(data['plain']);
+
+                }
+
+            });
+        };
+        var init = function() {
+            $("#toolButton").addClass("active");
+            $("#encode").on("click", function() {
+                encode();
+            });
+            $("#decode").on("click", function () {
+                decode();
+            });
+        };
+        return {
+            init: init
+        };
+    }();
 </script>
 {%endblock%}
 
 {%block style%}
+<link href="../../static/css/b64.css" rel="stylesheet" />
 {%endblock%}

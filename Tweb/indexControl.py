@@ -8,6 +8,7 @@ __author__ = 'Taburiss'
 from flask import Flask,request,render_template,url_for,jsonify
 from model import * 
 from DbConn import *
+import base64
 
 
 DEBUG = True
@@ -39,9 +40,15 @@ def b64():
 
 @app.route('/tool/b64Encode', methods=['POST'])
 def b64Encode():
-    s = request.form['username'];
-    return  jsonify({});
+    s = request.form['plain'];
+    r = base64.b64encode(s.encode('utf-8'));
+    return  jsonify({'cipher':r.decode()});
 
+@app.route('/tool/b64Decode', methods=['POST'])
+def b64Decode():
+    s = request.form['cipher'];
+    r = base64.b64decode(s.encode('utf-8'));
+    return  jsonify({'plain':r.decode()});
 
 if __name__ == '__main__':
     app.run(port=8023);

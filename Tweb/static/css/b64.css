@@ -1,0 +1,16 @@
+﻿body
+{
+}
+
+.textarea {
+    height: 200px;
+    margin: 20px 25px;
+    resize: none;
+    width: 650px;
+}
+
+.button {
+    height: 50px;
+    margin: 0 0 0 200px;
+    width: 50px;
+}
