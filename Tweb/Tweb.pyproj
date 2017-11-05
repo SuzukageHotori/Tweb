@@ -41,6 +41,7 @@
     <Folder Include="templates\" />
     <Folder Include="templates\home\" />
     <Folder Include="templates\layout\" />
+    <Folder Include="templates\washer\" />
     <Folder Include="templates\tool\" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +49,7 @@
     <Content Include="static\css\base.css" />
     <Content Include="static\css\index.css" />
     <Content Include="static\css\tool.css" />
+    <Content Include="static\css\washer.css" />
     <Content Include="static\font\8bitoperator.eot" />
     <Content Include="static\font\8bitoperator.svg" />
     <Content Include="static\font\8bitoperator.ttf" />
@@ -59,6 +61,7 @@
     <Content Include="templates\layout\layout.html" />
     <Content Include="templates\tool\b64.html" />
     <Content Include="templates\tool\index.html" />
+    <Content Include="templates\washer\washer.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

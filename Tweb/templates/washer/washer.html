@@ -1,0 +1,53 @@
+﻿{% extends "/layout/layout.html" %}
+
+{%block title%}
+{{model.title}}
+{%endblock%}
+
+
+{%block content%}
+<div class="cl bdWhite" style="height: 700px;">
+    <h2 style="margin: 20px 0 0 0;text-align: center">show only 30 of most recent values !</h2>
+    <table id="order" style="width: 600px; margin: 20px 0 0 50px;">
+        <tr>
+            <td style="width: 150px;">Department</td>
+            <td><input id="department" name="department"/> </td>
+        </tr>
+        <tr>
+            <td style="width: 150px;">Name</td>
+            <td><input id="name" name="name"/> </td>
+        </tr>
+        <tr>
+            <td style="width: 150px;">Month</td>
+            <td><input id="month" name="month"/> </td>
+        </tr>
+        <tr>
+            <td style="width: 150px;">Day</td>
+            <td><input id="day" name="day"/> </td>
+        </tr>
+        <tr>
+            <td style="width: 150px;">Hour(military time )</td>
+            <td><input id="hour" name="hour"/> </td>
+        </tr>
+        <tr><td></td><td><input type="button" value="Submit!"/></td></tr>
+    </table>
+</div>
+{%endblock%}
+
+{%block script%}
+<script>
+    $(document).ready(function() {
+        $("#washerButton").addClass("active");
+    });
+</script>
+{%endblock%}
+
+{%block style%}
+<style>
+    #order td{
+        height: 40px;
+    }
+     
+</style>
+<link rel="stylesheet" type="text/css" href="../../static/css/washer.css" />
+{%endblock%}

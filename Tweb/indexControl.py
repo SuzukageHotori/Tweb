@@ -50,5 +50,15 @@ def b64Decode():
     r = base64.b64decode(s.encode('utf-8'));
     return  jsonify({'plain':r.decode()});
 
+@app.route('/washer', methods=['GET', 'POST'])
+def washer():
+    model = toolModel();
+    model.name = 'washer';
+    return   render_template('/washer/washer.html',model=model);
+
+
+
+
+
 if __name__ == '__main__':
     app.run(port=8023);

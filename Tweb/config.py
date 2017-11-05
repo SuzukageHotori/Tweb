@@ -7,10 +7,10 @@ __author__ = 'Taburiss'
 
 configs = {
     'db':{
-        'host': 'host',
+        'host': 'jp.taburiss.com',
         'port': 3306,
-        'user': 'user',
-        'password': 'password',
-        'database': 'database'
+        'user': 'taburiss',
+        'password': 'mysql123456',
+        'database': 'webDB'
     }
 };

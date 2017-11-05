@@ -17,7 +17,11 @@ database = c['db']['database'];
 def connectTest():
     conn = mysql.connector.connect(host=host,user=user, password=password, database=database);
     cursor = conn.cursor();
-    cursor.execute('select * from TestSheet');
+    cursor.execute('select * from test');
     values = cursor.fetchall();
     cursor.close();
     conn.close();
+
+def makeconn():
+    conn = mysql.connector.connect(host=host,user=user, password=password, database=database);
+    return conn;
